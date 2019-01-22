@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".Model.EditUserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@drawable/bg_wave_dot_red">
+
+        <Button
+            android:id="@+id/btn_submitedit"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/edt_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-70dp"
+            android:drawablePadding="2dp"
+            android:textColor="@color/black"
+            android:background="@drawable/search_edittext"
+            android:drawableLeft="@drawable/icon_check_submit"
+            android:text="XÁC NHẬN" />
+
+        <Button
+            android:id="@+id/btn_BackEditUser"
+            android:layout_width="42dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/ic_back_kids_white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="38dp" />
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/img_avataruser"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/avatar"
+            app:siBorderColor="@color/colorAccent"
+            app:siBorderWidth="6dp" />
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:hint="Nhập vào tên của bạn..."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="254dp"
+            tools:layout_editor_absoluteY="229dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview_avataruser"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:orientation="vertical"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</LinearLayout>

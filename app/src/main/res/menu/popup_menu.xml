@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/hengio"
+        android:title="Hẹn Giờ" />
+    <item
+        android:id="@+id/phanhoi"
+        android:title="Phản Hồi"/>
+    <item
+        android:id="@+id/danhgia"
+        android:title="Đánh Giá" />
+    <item
+        android:id="@+id/gioithieu"
+        android:title="Giới Thiệu"/>
+</menu>

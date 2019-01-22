@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    tools:context=".ScreenToFaceDistance.Main2Activity">
+
+    <!--<com.google.android.youtube.player.YouTubePlayerView-->
+        <!--android:id="@+id/myYTBView"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_alignParentTop="true">-->
+    <!--</com.google.android.youtube.player.YouTubePlayerView>-->
+
+    <com.example.meowmeow.youtubekids.ScreenToFaceDistance.CameraSurfaceView   android:id="@+id/surface_camera"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/currentDistance"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/currentDistance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="@string/currentDistance"/>
+
+    <Button
+        android:id="@+id/calibrateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="pressedCalibrate"
+        android:text="@string/calibrate" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="pressedReset"
+        android:text="@string/reset" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/surface_camera"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/showMiddlePoint"
+            android:checked="true"
+            android:onClick="onShowMiddlePoint" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/showEyePoints"
+            android:checked="false"
+            android:onClick="onShowEyePoints" />
+
+    </LinearLayout>
+
+</RelativeLayout>
