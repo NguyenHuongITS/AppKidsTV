@@ -1,1 +1,2 @@
-# YouTubeKids
+# KidsTV
+Developer by NguyenHuongIT, NhatDuyIT
